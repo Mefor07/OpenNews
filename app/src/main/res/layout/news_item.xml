@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/itemMainView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+            <TextView
+                android:id="@+id/news_heading"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.7"
+                android:textSize="20sp"
+                android:layout_margin="5dp"
+                android:textColor="@color/black"
+                android:maxLines="2"
+                android:gravity="left|center_vertical"
+                android:ellipsize="end"
+                android:textStyle="bold|normal"
+               android:text="How to cure ulcer permanently within 3 days"/>
+
+            <ImageView
+                android:id="@+id/news_image"
+               android:layout_width="100dp"
+               android:layout_height="100dp"
+                android:layout_weight="0.3"
+                android:layout_margin="5dp"
+                android:scaleType="centerCrop"
+               android:src="@mipmap/ic_launcher"/>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5d,"
+            android:textStyle="normal"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="5dp"
+            android:textSize="12sp"/>
+            <TextView
+                android:id="@+id/link"
+                android:layout_toRightOf="@+id/time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="opennews.com"
+                android:textStyle="normal"
+                android:textSize="12sp"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>
